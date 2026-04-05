@@ -1,0 +1,46 @@
+@import "tailwindcss";
+
+:root {
+  --hone-forest: #0f2419;
+  --hone-green: #1a3d2e;
+  --hone-moss: #2d5a45;
+  --hone-charcoal: #0e1114;
+  --hone-steel: #8a939e;
+  --hone-silver: #c5ccd4;
+  --hone-fog: #e8ecef;
+  --hone-accent: #6b8f7a;
+}
+
+@theme inline {
+  --color-hone-forest: var(--hone-forest);
+  --color-hone-green: var(--hone-green);
+  --color-hone-moss: var(--hone-moss);
+  --color-hone-charcoal: var(--hone-charcoal);
+  --color-hone-steel: var(--hone-steel);
+  --color-hone-silver: var(--hone-silver);
+  --color-hone-fog: var(--hone-fog);
+  --color-hone-accent: var(--hone-accent);
+  --font-sans: var(--font-plex-sans);
+  --font-mono: var(--font-plex-mono);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+}
+
+body {
+  background: var(--hone-charcoal);
+  color: var(--hone-fog);
+  font-family: var(--font-plex-sans), system-ui, sans-serif;
+}
+
+::selection {
+  background: color-mix(in srgb, var(--hone-accent) 45%, transparent);
+  color: var(--hone-fog);
+}
