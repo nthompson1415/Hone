@@ -20,9 +20,9 @@ export function SiteHeader() {
           <Image
             src="/brand/hone-logo.jpg"
             alt="Hone Energy Systems"
-            width={158}
-            height={205}
-            className="h-9 w-auto sm:h-10"
+            width={640}
+            height={220}
+            className="h-10 w-auto sm:h-11"
             priority
           />
           <span className="sr-only">Hone Energy Systems</span>

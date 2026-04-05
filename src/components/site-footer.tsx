@@ -9,9 +9,9 @@ export function SiteFooter() {
             <Image
               src="/brand/hone-logo.jpg"
               alt="Hone Energy Systems"
-              width={120}
-              height={156}
-              className="h-8 w-auto opacity-95"
+              width={640}
+              height={220}
+              className="h-9 w-auto opacity-95"
             />
             <p className="mt-3 font-mono text-xs font-medium uppercase tracking-wider text-hone-steel">
               Energy Systems
