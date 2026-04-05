@@ -15,9 +15,9 @@ const plexMono = IBM_Plex_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Hone Energy Systems | BioForge — On-Farm ASTM D6751 Biodiesel",
+  title: "Hone Energy Systems | BioForge, On-Farm ASTM D6751 Biodiesel",
   description:
-    "Industrial-grade fuel autonomy. BioForge turns on-farm oils into ASTM D6751 biodiesel — precision reactors, economics-first deployment, REAP navigation.",
+    "Industrial-grade fuel autonomy. BioForge turns on-farm oils into ASTM D6751 biodiesel; precision reactors, economics-first deployment, REAP navigation.",
 };
 
 export default function RootLayout({
@@ -30,7 +30,18 @@ export default function RootLayout({
       lang="en"
       className={`${plexSans.variable} ${plexMono.variable} h-full antialiased`}
     >
-      <body className="min-h-full flex flex-col">{children}</body>
+      <body className="relative min-h-full flex flex-col bg-transparent">
+        <div
+          className="hone-ambient-fixed pointer-events-none fixed inset-0 -z-10"
+          aria-hidden
+        >
+          <div className="hone-ambient-mesh absolute inset-0" />
+          <div className="hone-ambient-grid absolute inset-0" />
+          <div className="hone-ambient-vignette absolute inset-0" />
+          <div className="hone-ambient-noise absolute inset-0" />
+        </div>
+        {children}
+      </body>
     </html>
   );
 }
