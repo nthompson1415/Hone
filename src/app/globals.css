@@ -180,3 +180,51 @@ body {
     transform: none;
   }
 }
+
+/* Annual fuel savings slider (economics) */
+.hone-range-slider {
+  --fill-pct: 50%;
+  -webkit-appearance: none;
+  appearance: none;
+  height: 0.5rem;
+  border-radius: 9999px;
+  background: linear-gradient(
+    to right,
+    var(--hone-brand) 0%,
+    var(--hone-brand) var(--fill-pct),
+    color-mix(in srgb, var(--hone-fog) 14%, transparent) var(--fill-pct),
+    color-mix(in srgb, var(--hone-fog) 14%, transparent) 100%
+  );
+}
+
+.hone-range-slider:focus-visible {
+  outline: 2px solid color-mix(in srgb, var(--hone-brand) 70%, transparent);
+  outline-offset: 4px;
+}
+
+.hone-range-slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 1.125rem;
+  height: 1.125rem;
+  border-radius: 9999px;
+  background: var(--hone-fog);
+  border: 2px solid var(--hone-brand);
+  box-shadow: 0 0 0 1px color-mix(in srgb, var(--hone-charcoal) 40%, transparent);
+  margin-top: calc((0.5rem - 1.125rem) / 2);
+}
+
+.hone-range-slider::-moz-range-thumb {
+  width: 1.125rem;
+  height: 1.125rem;
+  border-radius: 9999px;
+  background: var(--hone-fog);
+  border: 2px solid var(--hone-brand);
+  box-shadow: 0 0 0 1px color-mix(in srgb, var(--hone-charcoal) 40%, transparent);
+}
+
+.hone-range-slider::-moz-range-track {
+  height: 0.5rem;
+  border-radius: 9999px;
+  background: transparent;
+}
