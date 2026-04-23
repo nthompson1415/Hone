@@ -230,14 +230,14 @@ export default function Home() {
                 <tbody className="divide-y divide-white/10 text-hone-silver">
                   <tr>
                     <td className="px-4 py-3 text-hone-fog">Retail diesel (pump)</td>
-                    <td className="px-4 py-3">$3.63 / gal</td>
+                    <td className="px-4 py-3">$5.40 / gal</td>
                   </tr>
                   <tr>
                     <td className="px-4 py-3 text-hone-fog">
                       On-farm production cost (model)
                     </td>
                     <td className="px-4 py-3">
-                      ~$0.16 / gal plus feedstock; confirm in diligence
+                      ~$1.10 / gal on-farm model; confirm in diligence
                     </td>
                   </tr>
                   <tr>
@@ -249,7 +249,7 @@ export default function Home() {
                       Net annual fuel savings (headline)
                     </td>
                     <td className="px-4 py-3 font-mono font-semibold text-hone-fog">
-                      $86,750
+                      $107,500
                     </td>
                   </tr>
                   <tr>
@@ -257,7 +257,8 @@ export default function Home() {
                       Payback with 50% USDA REAP
                     </td>
                     <td className="px-4 py-3">
-                      ~4.6 years (e.g. $1M capex → $500k net after grant)
+                      ~4.7 years ($500k net after 50% REAP on $1M capex ÷
+                      ~$107,500/yr illustrative fuel savings)
                     </td>
                   </tr>
                 </tbody>
