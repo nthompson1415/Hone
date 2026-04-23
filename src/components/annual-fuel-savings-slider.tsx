@@ -2,8 +2,8 @@
 
 import { useMemo, useState, type CSSProperties } from "react";
 
-const RETAIL_PER_GAL = 3.63;
-const ON_FARM_MODEL_PER_GAL = 0.16;
+const RETAIL_PER_GAL = 5.4;
+const ON_FARM_MODEL_PER_GAL = 1.1;
 const MIN_GAL = 1_000;
 const MAX_GAL = 100_000;
 const STEP = 500;
@@ -46,9 +46,9 @@ export function AnnualFuelSavingsSlider() {
             Annual biodiesel usage
           </h3>
           <p className="mt-1 max-w-xl text-sm text-hone-steel">
-            Move the slider to match your expected gallons per year. Savings
-            use the same illustrative pump vs. on-farm model cost as the table
-            above (not individualized advice).
+            Move the slider to match your expected gallons per year. Savings use
+            the same illustrative pump vs. on-farm model costs as the economics
+            primer on the site (not individualized advice).
           </p>
         </div>
         <p className="font-mono text-2xl font-semibold tabular-nums text-hone-brand sm:text-3xl">
@@ -97,7 +97,7 @@ export function AnnualFuelSavingsSlider() {
             {formatCurrency(modeledCost)}
           </dd>
           <p className="mt-1 text-xs text-hone-steel">
-            ~${ON_FARM_MODEL_PER_GAL.toFixed(2)}/gal plus feedstock (site model)
+            ~${ON_FARM_MODEL_PER_GAL.toFixed(2)}/gal on-farm model
           </p>
         </div>
         <div className="rounded-md border border-hone-brand/35 bg-hone-brand/10 px-4 py-3 sm:col-span-1">
